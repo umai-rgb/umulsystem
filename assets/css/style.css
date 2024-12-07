@@ -202,7 +202,7 @@ header .navbar ul li a:hover {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
-      display: none; /* Hidden by default */
+      display: none; 
       justify-content: center;
       align-items: center;
       z-index: 1000;
@@ -453,7 +453,7 @@ header .navbar ul li a:hover {
 /* social icons end */
 
 /* hero media queries starts*/
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .home .btn {
     margin: 4rem 0;
   }
@@ -475,7 +475,8 @@ header .navbar ul li a:hover {
 .contact {
   min-height: 60vh;
   background: rgb(96,223,238);
-background: linear-gradient(0deg, rgba(96,223,238,1) 0%, rgba(15,85,114,1) 100%);  font-family: "Poppins", sans-serif;
+background: linear-gradient(0deg, rgba(96,223,238,1) 0%, rgba(15,85,114,1) 100%); 
+font-family: "Poppins", sans-serif;
 
 }
 .contact .container {
@@ -668,8 +669,8 @@ form .button-area {
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .about .row .content h3 {
@@ -948,7 +949,7 @@ form .button-area {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    flex-grow: 1; /* Make details section fill available space */
+    flex-grow: 1; 
 }
 
 .song-container .music-container .box .song-title {
@@ -1070,7 +1071,7 @@ section {
 
 
 /* education media queries starts*/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .education .box-container .box {
     flex-direction: column;
     width: 100%;
@@ -1205,7 +1206,6 @@ justify-content: center;
   text-align:left;
 }
 
-/* Modal Styles */
 .job-modal-content {
   display: flex;
   flex-direction: column;
@@ -1641,20 +1641,20 @@ justify-content: center;
 /* Scroll to top button */
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;  /* Place the button 20px from the bottom */
-  right: 20px;   /* Place the button 20px from the right */
-  font-size: 1.5rem;  /* Make the icon smaller */
+  bottom: 20px;  
+  right: 20px;   
+  font-size: 1.5rem;  
   background-color: #48D1CC;
   color: white;
-  padding: 0.5rem;  /* Adjust the padding for smaller size */
-  border-radius: 50%;  /* Make the button circular */
+  padding: 0.5rem; 
+  border-radius: 50%;  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .scroll-to-top:hover {
-  background-color: #36b2a1;  /* Change color on hover */
+  background-color: #36b2a1;  
 }
 
 
