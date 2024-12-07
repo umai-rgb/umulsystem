@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Umul Umairah, personal website, Umul, full stack dev, personal website lifecodes, portfolio design" />
+    <meta name="description" content="Welcome to  Personal Website " />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='icon' rel="shortcut icon" href=".\assets\images\icon.png" type="image/x-png">
+    <title>Umul's Website | Experience</title>
+</head>
+<body oncontextmenu="return false">
+    
+	<!-- navbar starts -->
+<!-- navbar starts -->
+<header>
+	<div class="logo">
+        <img src=".\assets\images\logo.png" alt="Logo">
+    </div>
+		<div id= "clock" class="clock"></div>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a class="active" href="experience.html">Experience</a></li>
+			<li><a href="family.html">Family</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+</header>
+<script>
+document.getElementById("menu").addEventListener("click", function() {
+    document.querySelector("header .navbar").classList.toggle("nav-toggle");
+});
+</script>
+<!-- navbar ends -->
+ <!-- clock start -->
+<div class="clock">
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}`;
+        document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+   </div>
+ <!-- clock ends -->
+
+<!-- clock. javascript -->
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+<!-- clock. javascript ends -->
+
+<section class="experience" id="experience" style="background-color: #fff;">
+<div class="heading">
+    <h1><i class="fas fa-briefcase"></i>EXPERIENCE</h1>
+<h2>where did i work before?</h2>
+</div>
+<div class="job-container" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 5px;">
+<div class="job-box" style="flex: 1; max-width: 35%; min-width: 450px;">
+	  		<a target="_blank" href=".\assets\images/sk.jpg">
+        <img draggable="false" class="img-experience" src=".\assets\images/sk.jpg" alt="">
+		</a>
+        <h3 style="font-size:3rem; margin-bottom:10px; color:#00d9ff; text-align:center;">Part Time</h3>
+        <p style="font-style:italic;">Studio Kembara Sdn. Bhd.</p>
+        <p>2 Month (2023)</p>
+        <ul   style="text-align:left";>
+          <li>Assign to manage merchandise orders<br/> for Studio Kemabara Product</li>
+          <li>Assisted in managing product stock and inventory</li>
+          <li>Participate and provide support in <br/> any programs and events</li>
+        </ul>
+<button onclick="openModal('id01')" class="job-button job-black">Learn More</button>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="job-modal-content">
+    <span onclick="closeModal('id01')" class="job-display-topright">&times;</span>
+	
+<img  src=".\assets\images\sk1.png" alt="Studio Kembara Image">
+	<h2>studio kembara</h2>
+    <p>Studio Kembara Sdn. Bhd. is a Malaysian film production company established in 2013 by Abdul Rahman Mat Dali and Shahruddin Mat Dali. 
+	The company has gained recognition for producing impactful films, most notably *Mat Kilau: Kebangkitan Pahlawan*, 
+	which became one of Malaysia's highest-grossing films. The movie highlights the historical legacy of the
+	Malay warrior Mat Kilau and promotes patriotism, culture, and religious values. 
+Beyond filmmaking, Studio Kembara has ventured into digital entertainment, such as creating culturally-themed video games 
+and exploring virtual reality technologies. Their collaboration with other innovative companies aims to educate and engage
+ younger audiences while preserving Malay heritage and traditions.
+    </p>
+  </div>
+</div>
+<div class="job-box" style="flex: 1; max-width: 35%; min-width: 450px;">
+	  <div class="image">
+	  <a target="_self" href=".\assets\images/azzahrah.jpg">
+        <img draggable="false" class="img-experience" src=".\assets\images/azzahrah.jpg" alt="">
+		</a>
+		</div>
+        <h3 style="font-size:3rem; margin-bottom:10px; color:#00d9ff; text-align:center;">Internship</h3>
+        <p style="font-style:italic;">Hospital Islam Az-Zahrah Sdn. Bhd.</p>
+        <p>2 Month (2024)</p>
+        <ul>
+          <li>Assigned to Record Management Department <br/>as Record Officer Assistant</li>
+          <li>Assisted in managing patient data and records </li>
+          <li>Helped in file delivery to the specialist <br/>clinic and retrieval file</li>
+		  </ul>
+<button onclick="openModal('id02')" class="job-button job-black">Learn More</button>
+</div>
+
+<!-- Modal -->
+<div id="id02" class="w3-modal">
+  <div class="job-modal-content">
+    <span onclick="closeModal('id02')" class="job-display-topright">&times;</span>
+	<img  src=".\assets\images\azzahrah1.jpg" alt="Az-Zahrah Image">
+	<h2>hospital islam azzahrah</h2>
+    <p>Hospital Islam Az-Zahrah is a multidisciplinary private hospital located in Bandar Baru Bangi, Selangor, 
+      and has been in operation since October 1997. <br><br>
+      Medicine is a field that should be utilized to bring people closer to Allah through appropriate means of tarbiyah 
+      (education and spiritual development) that align with its nature. <br><br>
+      The implementation of the "Hospital Mesra Ibadah" (Worship-Friendly Hospital) concept aims to cultivate a workforce 
+      that is more dedicated and views their work as an act of worship. 
+      This initiative also fosters an environment that is virtuous, caring, and customer-friendly.
+    </p>
+  </div>
+</div>
+<script>
+// Open Modal Function
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'block';
+}
+
+// Close Modal Function
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
+</script>	
+<div class="achievement" style="margin-top: 40px;">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+      </div>
+      <h2 class="achievement-heading">Achievements</h2>
+      <div class="achievement-cards">
+<table class="achievement-table">
+  <thead>
+    <tr>
+      <th style="font-style:italic;">Year</th>
+      <th style="font-style:italic;">Category</th>
+      <th style="font-style:italic;">Title</th>
+      <th style="font-style:italic;">Organizer</th>
+      <th style="font-style:italic;">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight:bold;">2016–2019</td>
+      <td>Competition</td>
+      <td>Marching Competitions</td>
+      <td>SMK Bandar Baru Bangi (SMKBBB)</td>
+      <td>Team Member</td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold;">2021</td>
+      <td>Leadership</td>
+      <td>
+	      <ul>
+          <li>President of School Library</li>
+          <li>President of Pandu Puteri(Co-curriculum)</li>
+		</ul>
+	  </td>
+      <td>SMK Bandar Baru Bangi (SMKBBB)</td>
+      <td>Managed library operations and activities</td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold;">2021</td>
+      <td>Academic</td>
+      <td>Fine Arts Coursework (Catan)</td>
+      <td>SMK Bandar Baru Bangi (SMKBBB)</td>
+      <td>Achieved excellent grade (Cemerlang)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold;">2022</td>
+      <td>Program</td>
+      <td><dfn><abbr title="Sijil Kemahiran Profesional">SKP</abbr></dfn> (Short Courses)</td>
+      <td>Kolej Antarabangsa Unifield</td>
+      <td>Participant in various skills training:
+        <ul>
+          <li>Hotel Management Skills</li>
+          <li>Office Management Skills</li>
+          <li>Business Communication</li>
+          <li>Computer Maintenance</li>
+          <li>Interpersonal Skills</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold;">2023</td>
+      <td>Volunteer Work</td>
+      <td>Volunteer Program</td>
+      <td>UiTM & Standard Chartered</td>
+      <td>Contributed to event execution</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+  </section>  <!-- skill section end -->
+  
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Umul Umairah</h3>
+          <p>Thank you for visiting my personal personal website. <br/> <br/> Keep Rising 🚀. Connect with me over chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="experience.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="education.html"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="family.html"><i class="fas fa-chevron-circle-right"></i> family</a>
+          <a href="gallery.html"><i class="fas fa-chevron-circle-right"></i> gallery</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+60 11-28369839</p>
+          <p> <i class="fas fa-envelope"></i>umuljaafar13@gmail</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Selangor,Malaysia</p>
+          <div class="share">
+
+              <a href="https://www.facebook.com/umul.jaafar.1" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+              <a href="mailto:umuljaafar1@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.tiktok.com/@umuljaafar?_t=8r51fzQ8fvL&_r=1" class="fab fa-tiktok" aria-label="tiktok" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+<h1 class="credit">
+      Designed by <a href="index.html">Umul Umairah</a> | 
+      <span id="date"></span>
+  </h1>
+
+</section>
+
+<script>
+    const dateElement = document.getElementById("date");
+    const currentDate = new Date().toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    dateElement.textContent = currentDate;
+</script>
+<!-- footer section ends -->
+</body>
+</html>
